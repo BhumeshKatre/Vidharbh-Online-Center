@@ -3,6 +3,7 @@ import "./App.css"
 
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
+import Footer from "./components/Footer"
 // import Services from "./pages/Services"
 // import Blogs from "./pages/Blogs"
 // import BlogDetails from "./pages/BlogDetails"
@@ -27,6 +28,7 @@ function App() {
         <Route path="/contact" element={<Contact />} /> */}
 
       </Routes>
+      <Footer />
 
     </div>
   )
