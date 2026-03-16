@@ -1,4 +1,4 @@
-export const Jobs = [
+export const JobsData = [
   {
     id: 1,
     title: "SSC GD Recruitment 2026",
