@@ -1,4 +1,4 @@
-import { jobs } from "../data/jobs";
+import { Jobs } from "../data/Jobs";
 import { Link } from "react-router-dom";
 
 const Jobs = () => {
@@ -38,7 +38,7 @@ const Jobs = () => {
 
             <tbody>
 
-              {jobs.map((job) => (
+              {Jobs.map((job) => (
 
                 <tr
                   key={job.id}
