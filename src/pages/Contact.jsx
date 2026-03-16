@@ -128,6 +128,33 @@ const Contact = () => {
 
       </section>
 
+      {/* GOOGLE MAP */}
+
+      <section className="py-16 bg-white">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <h2 className="text-3xl font-bold text-center text-[#1E3A8A] mb-10">
+            Our Location
+          </h2>
+
+          <div className="rounded-xl overflow-hidden shadow-md">
+
+            <iframe
+              src="https://www.google.com/maps?q=Goregaon%20Durga%20Chowk&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
+
+          </div>
+
+        </div>
+
+      </section>
+
     </div>
   );
 };

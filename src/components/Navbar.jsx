@@ -18,7 +18,7 @@ const Navbar = () => {
           <img
             src="/logo.png"
             alt="logo"
-            className="w-8 h-8"
+            className="w-12 h-12 rounded-full"
           />
 
           <h1 className="text-xl font-bold tracking-wide">
@@ -40,22 +40,23 @@ const Navbar = () => {
             Home
           </NavLink>
 
+        
           <NavLink
-            to="/services"
+            to="/jobs"
             className={({ isActive }) =>
               isActive ? "text-orange-400" : "hover:text-orange-400"
             }
           >
-            Services
+            Jobs
           </NavLink>
 
           <NavLink
-            to="/blogs"
+            to="/schemes"
             className={({ isActive }) =>
               isActive ? "text-orange-400" : "hover:text-orange-400"
             }
           >
-            Blogs
+            Schemes
           </NavLink>
 
           <NavLink
@@ -68,13 +69,6 @@ const Navbar = () => {
           </NavLink>
 
         </div>
-
-
-        {/* Apply Button */}
-
-        <button className="hidden md:block bg-[#F97316] px-4 py-2 rounded-lg font-medium hover:bg-orange-600 transition">
-          Apply Service
-        </button>
 
 
         {/* Hamburger */}
@@ -92,7 +86,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
 
       <div
-        className={`md:hidden bg-[#1E3A8A] px-6 overflow-hidden transition-all duration-300 ${menuOpen ? "max-h-60 py-4" : "max-h-0"
+        className={`md:hidden bg-[#1E3A8A] px-6 overflow-hidden transition-all duration-300 ${menuOpen ? "max-h-80 py-4" : "max-h-0"
           }`}
       >
 
@@ -102,21 +96,19 @@ const Navbar = () => {
             Home
           </NavLink>
 
-          <NavLink onClick={handleMenus} to="/services">
-            Services
+         
+
+          <NavLink onClick={handleMenus} to="/jobs">
+            Jobs
           </NavLink>
 
-          <NavLink onClick={handleMenus} to="/blogs">
-            Blogs
+          <NavLink onClick={handleMenus} to="/schemes">
+            Schemes
           </NavLink>
 
           <NavLink onClick={handleMenus} to="/contact">
             Contact
           </NavLink>
-
-          <button className="bg-[#F97316] px-4 py-2 rounded-lg w-full">
-            Apply Service
-          </button>
 
         </div>
 
