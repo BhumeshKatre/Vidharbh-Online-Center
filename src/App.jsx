@@ -9,6 +9,7 @@ import Jobs from "./pages/Jobs";
 import Scheme from "./pages/Scheme";
 import SchemeDetails from "./pages/SchemeDetails";
 import PageNotFound from "./pages/PageNotFound";
+import JobDetails from "./pages/JobDetails"
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/schemes" element={<Scheme />} />
 
         <Route path="/schemes/:id" element={<SchemeDetails />} />
+        <Route path="/job/:id" element={<JobDetails />} />
 
         <Route path="/contact" element={<Contact />} />
 
